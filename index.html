@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang=“en”>
+<head>
+    <title>Jithin K. Sreedharan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+    div.intro {
+        text-align: justify;
+        text-justify: inter-word;
+        padding-bottom:20px;
+        padding-top:35px;
+        border-bottom:1px solid lightgrey;
+        max-width:90%;
+
+    }
+
+    footer {
+        font-size:2;
+        padding: 15px;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <!-- <div class="container" id="myNavbar" style ="padding-right:50px"> -->
+        <div class="container" id="myNavbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home" style="color:#DC643F" > <font size="5"> Jithin K. Sreedharan </font> </a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#Publications">Publications</a></li>
+                <li><a href="#Theses">Theses</a></li>
+                <li><a href="./files/CV/Jithin_CV.pdf" target="_blank">
+                    Curriculum Vitae</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <div class="intro" id="home" style="padding-bottom:40px;padding-top:20px">
+                <br>
+                <br>
+                <br>
+                <p style="text-align:left" >
+                    <!--        <IMG src="pic/Pic2.jpg" alt="ProfilePic" class="img-rounded"-->
+                    <!--            style="float:left;width:329px;height:275px">-->
+                    <IMG src="./files/images/profile.jpg" alt="profilepic" class="img-circle"
+                    style="float:left;width:250px;height:250px">
+                    <article style="margin-left:400px; margin-top:0px">
+                        <h4>Postdoctoral Research Associate</h4>
+                        <p>
+                            <a href = "https://www.soihub.org">NSF Center for Science of Information</a> <br>
+                            <a href = "https://www.cs.purdue.edu">Department of Computer Science</a> <br>
+                            Purdue University <br>
+                            West Lafayette, IN 47907, USA
+                        </p>
+
+                        <p>
+                            Office: HAAS 220 <br>
+                            Email: jithinks (at) purdue (dot) edu
+                            <!-- <span class="glyphicon glyphicon-home"> </span>  HAAS 220 <br>
+                            <span class="glyphicon glyphicon-envelope"> </span> jithinks (at) purdue (dot) edu -->
+                        </p>
+                        <p>
+                            <h5>Academic Experience</h5>
+                            PhD in CS from <a href="https://www.inria.fr/en/">INRIA</a>, France (Dec 2016) <br>
+                            MS in ECE from <a href="http://ece.iisc.ernet.in">IISc Bangalore</a>, India (Aug 2012)
+                        </p>
+                    </article>
+                </p>
+            </div>
+
+            <div class="intro" style="padding-top:10px">
+                <H3>Research Interests</H3>
+                Network science, statistical inference, spectral graph theory, detection and estimation
+                <!-- <p>
+            </p> -->
+        </div>
+
+        <!-- <h4>Journal Papers and Conference Proceedings</h4> -->
+        <div class="intro" id="Publications">
+            <H3>Publications</H3>
+            <p>
+
+                *corresponding author, alphabetical author-list
+
+                <ul style="list-style-type:disc" >
+                    <li>Revisiting Random Walk based Sampling in Networks: Evasion of Burn-in Period and Frequent Regenerations,<br>
+                        Konstantin Avrachenkov, Vivek S. Borkar, Arun Kadavankandy and Jithin K. Sreedharan* <br>
+                        <a data-toggle="collapse" data-target="#ab1">[abstract]</a> &nbsp <i>Submitted</i>
+                        <!-- <a href="">[paper]</a> -->
+                        <div class="collapse" id="ab1">
+                            In the framework of network sampling, random walk (RW) based estimation techniques provide many pragmatic solutions while uncovering the unknown network as little as possible. Despite several theoretical advances in this area, RW based sampling techniques usually make a strong assumption that the samples are in stationary regime, and hence are impelled to leave out the samples collected before the burn-in period. This work proposes two sampling schemes without burn-in constraint to estimate the average of an arbitrary function defined on the network nodes, for e.g. the average age of users in a social network. The central idea of the algorithms lies in exploiting regeneration of RWs at revisits to an aggregated super-node or to a set of nodes and in strategies to enhance the frequency of such regenerations either by contracting the graph or by making the hitting set larger. Our first algorithm, which is based on Reinforcement Learning (RL), takes advantage of the regeneration of RWs, and it uses stochastic approximation to derive an estimator. This method can be seen as intermediate between purely stochastic Markov Chain Monte Carlo iterations  and deterministic relative value iterations. We study this method via simulations on real networks and observe that its trajectories are much more stable than those of standard random walk based estimation procedures, and its error performance is comparable to that of respondent driven sampling (RDS) which has a smaller asymptotic variance than many other estimators. The second algorithm, which we call the RT estimator, is a modified form of RDS that accommodates the idea of regeneration. Simulation studies show that the mean squared error of RT estimator decays much faster than that of RDS with time.
+                        </div>
+                    </li><br>
+
+                    <li>Hamiltonian System Approach to Eigenvalue-Eigenvector Problem in Networks <br>
+                        Konstantin Avrachenkov, Philippe Jacquet and Jithin K. Sreedharan* <br>
+                        <a data-toggle="collapse" data-target="#ab2">[abstract]</a> &nbsp  <i>Submitted</i>
+                        <!-- <a href="">[paper]</a> -->
+                        <div class="collapse" id="ab2">
+                            Due to an upsurge in the size and the complexity of the networks these days, the distributed computation of eigenvalues and eigenvectors of graph matrices has become very challenging, yet it remains as important as before. In this paper we develop efficient distributed algorithms to detect, with higher resolution, closely situated eigenvalues and corresponding eigenvectors of symmetric graph matrices. We model the system of graph spectral computation as physical systems with Lagrangian and Hamiltonian dynamics. The spectrum of Laplacian matrix, in particular, is framed as a classical spring-mass system with Lagrangian dynamics. The spectrum of any general symmetric graph matrix turns out to have a simple connection with quantum systems and it can be thus formulated as a solution to a Schr\"odinger-type differential equation. Taking into account the higher resolution requirement in the spectrum computation and the related stability issues in the numerical solution of the underlying differential equation, we propose the application of symplectic integrators to the calculation of eigenspectrum. The effectiveness of the proposed techniques is demonstrated with numerical simulations on real-world networks of different sizes and complexities.
+                        </div>
+                    </li><br>
+
+                    <li>Recovery of Vertex Orderings in Dynamic Graphs<br>
+                        Abram Magner, Ananth Grama, Jithin K. Sreedharan, and Wojciech Szpankowski <br>
+                        <i>Accepted in IEEE International Symposium on Information Theory (ISIT), 2017 </i> <br>
+                        <a data-toggle="collapse" data-target="#ab21">[abstract]</a>
+                        <div class="collapse" id="ab21">
+                            Many networks in the real world are dynamic in nature: nodes enter, exit, and make and break connections with
+                            one another as time passes. Several random graph models of these networks are such that nodes have well-defined arrival times. It is natural to ask if, for a given random graph model, we can recover the arrival order of nodes, given information about the structure of the graph. In this work, we give a rigorous formulation of the problem in a statistical learning framework and tie its feasibility, for a broad class of models, to several sets of permutations
+                            associated with the symmetries of the random graph model and graphs generated by it. Moreover, we show how the same
+                            quantities are fundamental to the study of the information content of graph structures. We then apply our general results to the special cases of the Erd˝os-R´enyi and preferential attachment models to derive strong inapproximability results.
+                        </div>
+                    </li><br>
+
+                    <li>Inference in OSNs via Lightweight Partial Crawls<br>
+                        Konstantin Avrachenkov, Bruno Ribeiro and Jithin K. Sreedharan* <br>
+                        <i>ACM SIGMETRICS / PERFORMANCE 2016 </i><br>
+                        <a data-toggle="collapse" data-target="#ab3">[abstract]</a>
+                        <a href="./files/publications/Jithin_Sigmetrics_2016.pdf">[paper]</a>
+                        <a href="./files/slides/JKSreedharan_Sigmetrics_v2_pptsplit.pdf">[presentation]</a>
+                        <a href="https://github.com/jithin-k-sreedharan/HypRW"> [code] </a>
+                        <div class="collapse" id="ab3">
+                            Are Online Social Network (OSN) A users more likely to form friendships with those with similar attributes? Do users at an OSN B score content more favorably than OSN C users? Such questions frequently arise in the context of Social Network Analysis (SNA) but often crawling an OSN network via its Application Programming Interface (API) is the only way to gather data from a third party. To date, these partial API crawls are the majority of public datasets and the synonym of lack of statistical guarantees in incomplete-data comparisons, severely limiting SNA research progress. Using regenerative properties of the random walks, we propose estimation techniques based on short crawls that have proven statistical guarantees. Moreover, our short crawls can be implemented in massively distributed algorithms. We also provide an adaptive crawler that makes our method parameter-free, significantly improving our statistical guarantees. We then derive the Bayesian approximation of the posterior of the estimates, and in addition, obtain an estimator for the expected value of node and edge statistics in an equivalent configuration model or Chung-Lu random graph model of the given network (where nodes are connected randomly) and use it as a basis for testing null hypotheses. The theoretical results are supported with simulations on a variety of real-world networks.
+                        </div>
+                    </li><br>
+
+                    <li>Distributed Spectral Decomposition in Networks by Complex Diffusion and Quantum Random Walk<br>
+                        Konstantin Avrachenkov, Philippe Jacquet and Jithin K. Sreedharan*  <br>
+                        <i>IEEE International Conference on Computer Communication (INFOCOM) 2016 </i><br>
+                        <a data-toggle="collapse" data-target="#ab4">[abstract]</a>
+                        <a href="./files/publications/Jithin_Infocom2016.pdf">[paper]</a>
+                        <a href="./files/slides/Jithin_Infocom_with-pause.pdf">[presentation]</a>
+                        <a href="./files/publications/poster_Jithin_INRIA.pdf">[poster (Bell Labs Future days, Paris)]</a>
+                        <div class="collapse" id="ab4">
+                            In this paper we address the problem of finding top $k$ eigenvalues and corresponding eigenvectors of symmetric graph matrices in networks in a distributed way. We propose a novel idea called complex power iterations in order to decompose the eigenvalues and eigenvectors at node level, analogous to time-frequency analysis in signal processing. At each node, eigenvalues correspond to the frequencies of spectral peaks and respective eigenvector components are the amplitudes at those points. Based on complex power iterations and motivated from fluid diffusion processes in networks, we devise distributed algorithms with different orders of approximation. We also introduce a Monte Carlo technique with gossiping which substantially reduces the computational overhead. An equivalent parallel random walk algorithm is also presented. We validate the algorithms with simulations on real-world networks. Our formulation of the spectral decomposition can be easily adapted to a simple algorithm based on quantum random walks. With the advent of quantum computing, the proposed quantum algorithm will be extremely useful.
+                        </div>
+                    </li><br>
+
+
+                    <li>Comparison of random walk based techniques for estimating network averages<br>
+                        Konstantin Avrachenkov, Vivek S. Borkar, Arun Kadavankandy and and Jithin K. Sreedharan* <br>
+                        <i>5th International Conference on Computational Social Networks (CSoNet) 2016 </i> <br>
+                        <a data-toggle="collapse" data-target="#ab5">[abstract]</a>
+                        <a href="./files/publications/Jithin_Csonet_2016.pdf">[paper]</a>
+                        <a href="./files/slides/JKSreedharan_CSoNet16_pptsplit.pdf">[presentation]</a>
+                        <a href="https://github.com/jithin-k-sreedharan/RL_based_RW_graph">[code]</a>
+                        <div class="collapse" id="ab5">
+                            Function estimation on Online Social Networks (OSN) is an important field of study in complex network analysis. An efficient way to do function estimation on large networks is to use random walks. We can then defer to the extensive theory of Markov chains to do error analysis of these estimators. In this work we compare two existing techniques, Metropolis-Hastings MCMC and Respondent-Driven Sampling, that use random walks to do function estimation and compare them with a new reinforcement learning based technique. We provide both theoretical and empirical analyses for the estimators we consider.        </div>
+                        </li><br>
+
+
+                        <li>Distribution and Dependence of Extremes in Network Sampling Processes<br>
+                            Konstantin Avrachenkov, Natalia M. Markovich and Jithin K. Sreedharan* <br>
+                            <a data-toggle="collapse" data-target="#ab6">[abstract]</a>
+                            <a href="http://www.computationalsocialnetworks.com/content/pdf/s40649-015-0018-3.pdf">[paper]</a>
+                            <a href="./files/slides/Jithin_Maestro-retreat_Mar-15.pdf">[presentation]</a>
+                            <ul>
+                                <li><i>Computational Social Networks, Springer, 2015</i></li>
+                                <li><i>Third International IEEE Workshop on Complex Networks and their Applications, Nov 2014</i></li>
+                            </ul>
+                            <div class="collapse" id="ab6">
+                                We explore the dependence structure in the sampled sequence of complex networks. We consider randomized algorithms to sample the nodes and study extremal properties in any associated stationary sequence of characteristics of interest like node degrees, number of followers or income of the nodes in Online Social Networks etc, which satisfy two mixing conditions. Several useful extremes of the sampled sequence like $k$th largest value, clusters of exceedances over a threshold, first hitting time of a large value etc are investigated. We abstract the dependence and the statistics of extremes into a single parameter that appears in Extreme Value Theory, called Extremal Index (EI). In this work, we derive this parameter analytically and also estimate it empirically. We propose the use of EI as a parameter to compare different sampling procedures. As a specific example, degree correlations between neighboring nodes are studied in detail with three prominent random walks as sampling techniques.
+                            </div>
+                        </li><br>
+
+                        <li>Spectrum sensing using distributed sequential detection via noisy reporting MAC<br>
+                            Jithin K. Sreedharan and Vinod Sharma <br>
+                            <i>Signal Processing (Elsevier), Jan 2015 </i> <br>
+                            <a data-toggle="collapse" data-target="#ab7">[abstract]</a>
+                            <a href="./files/publications/Jithin_Signal-Processing.pdf">[paper]</a>
+                            <div class="collapse" id="ab7">
+                                This paper considers cooperative spectrum sensing algorithms for Cognitive Radios which focus on reducing the number of samples to make a reliable detection. We propose algorithms based on decentralized sequential hypothesis testing in which the Cognitive Radios sequentially collect the observations, make local decisions and send them to the fusion center for further processing to make a final decision on spectrum usage. The reporting channel between the Cognitive Radios and the fusion center is assumed more realistically as a Multiple Access Channel (MAC) with receiver noise. Furthermore the communication for reporting is limited, thereby reducing the communication cost. We start with an algorithm where the fusion center uses an SPRT-like (Sequential Probability Ratio Test) procedure and theoretically analyze its performance. Asymptotically, its performance is close to the optimal centralized test without fusion center noise. We further modify this algorithm to improve its performance at practical operating points. Later we generalize these algorithms to handle uncertainties in SNR and fading.
+                            </div>
+                        </li><br>
+
+
+                        <li>Nonparametric distributed sequential detection via universal source coding<br>
+                            Jithin K. Sreedharan and Vinod Sharma
+                            <i>Information Theory and Applications Workshop (ITA), Feb 2013 </i><br>
+                            <a data-toggle="collapse" data-target="#ab8">[abstract]</a>
+                            <a href="./files/publications/Jithin_ITA_2013.pdf">[paper]</a>
+                            <div class="collapse" id="ab8">
+                                We consider nonparametric or universal sequential
+                                hypothesis testing when the distribution under the null hypothesis
+                                is fully known but the alternate hypothesis corresponds to some
+                                other unknown distribution. These algorithms are primarily
+                                motivated from spectrum sensing in Cognitive Radios and
+                                intruder detection in wireless sensor networks. We use easily
+                                implementable universal lossless source codes to propose simple
+                                algorithms for such a setup. The algorithms are first proposed for
+                                discrete alphabet. Their performance and asymptotic properties
+                                are studied theoretically. Later these are extended to continuous
+                                alphabets. Their performance with two well known universal
+                                source codes, Lempel-Ziv code and KT-estimator with Arithmetic
+                                Encoder are compared. These algorithms are also compared with
+                                the tests using various other nonparametric estimators. Finally a
+                                decentralized version utilizing spatial diversity is also proposed
+                                and analysed.
+                            </div>
+                        </li><br>
+
+                        <li>Spectrum Sensing via Universal Source Coding<br>
+                            Jithin K. Sreedharan and Vinod Sharma <br>
+                            <i>IEEE Global Communications Conference (GLOBECOM), Dec 2012</i> <br>
+                            <a data-toggle="collapse" data-target="#ab9">[abstract]</a>
+                            <a href="./files/publications/Jithin_Globecom_2012.pdf">[paper]</a>
+                            <div class="collapse" id="ab9">
+                                We consider nonparametric sequential hypothesis
+                                testing when the distribution under null hypothesis is fully
+                                known and the alternate hypothesis corresponds to some other
+                                unknown distribution. We use easily implementable universal
+                                lossless source codes to propose simple algorithms for such a
+                                setup. These algorithms are motivated from spectrum sensing
+                                application in Cognitive Radios. Universal sequential hypothesis
+                                testing using Lempel Ziv codes and Krichevsky-Trofimov estimator
+                                with Arithmetic Encoder are considered and compared for
+                                different distributions. Cooperative spectrum sensing with multiple
+                                Cognitive Radios using universal codes is also considered.
+                            </div>
+                        </li><br>
+
+
+                        <li>Novel algorithms for distributed sequential hypothesis testing<br>
+                            K. S. Jithin and Vinod Sharma <br>
+                            <i>49th Annual Allerton Conference on Communication, Control and Computing, Sep 2011 </i> <br>
+                            <a data-toggle="collapse" data-target="#ab10">[abstract]</a>
+                            <a href="./files/publications/Jithin_Allerton_2011.pdf">[paper]</a>
+                            <div class="collapse" id="ab10">
+                                This paper considers sequential hypothesis testing
+                                in a decentralized framework. We start with two simple decentralized
+                                sequential hypothesis testing algorithms. One of which is
+                                later proved to be asymptotically Bayes optimal. We also consider
+                                composite versions of decentralized sequential hypothesis testing.
+                                A novel nonparametric version for decentralized sequential
+                                hypothesis testing using universal source coding theory is developed.
+                                Finally we design a simple decentralized multihypothesis
+                                sequential detection algorithm.
+                            </div>
+                        </li><br>
+
+                        <li>A novel algorithm for cooperative distributed sequential spectrum sensing in Cognitive Radio<br>
+                            Jithin K. Sreedharan and Vinod Sharma <br>
+                            <i> IEEE Wireless Communications and Networking Conference (WCNC), Mar 2011.</i> <br>
+                            <a data-toggle="collapse" data-target="#ab11">[abstract]</a>
+                            <a href="./files/publications/Jithin_WCNC_2011.pdf">[paper]</a>
+                            <div class="collapse" id="ab11">
+                                This paper considers cooperative spectrum sensing
+                                in Cognitive Radios. In our previous work we have developed
+                                DualSPRT, a distributed algorithm for cooperative spectrum
+                                sensing using Sequential Probability Ratio Test (SPRT) at the
+                                Cognitive Radios as well as at the fusion center. This algorithm
+                                works well, but is not optimal. In this paper we propose an
+                                improved algorithm- SPRT-CSPRT, which is motivated from Cumulative
+                                Sum Procedures (CUSUM). We analyse it theoretically.
+                                We also modify this algorithm to handle uncertainties in SNR’s
+                                and fading.
+                            </div>
+                        </li><br>
+
+                        <li>Cooperative distributed sequential spectrum sensing<br>
+                            K. S. Jithin, Vinod Sharma, and Raghav Gopalarathnam <br>
+                            <i>IEEE National Conference on Communication (NCC), Jan 2011</i><br>
+                            <a data-toggle="collapse" data-target="#ab12">[abstract]</a>
+                            <a href="./file/publications/Jithin_NCC_2011.pdf">[paper]</a>
+                            <div class="collapse" id="ab12">
+                                We consider cooperative spectrum sensing for cognitive
+                                radios. We develop an energy efficient detector with low
+                                detection delay using sequential hypothesis testing. Sequential
+                                Probability Ratio Test (SPRT) is used at both the local nodes
+                                and the fusion center. We also analyse the performance of
+                                this algorithm and compare with the simulations. Modelling
+                                uncertainties in the distribution parameters are considered. Slow
+                                fading with and without perfect channel state information at the
+                                cognitive radios is taken into account.
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </p>
+
+            </div>
+
+            <div class="intro" id="Theses">
+                <H3>Theses</H3>
+                <p>
+                    <ul style="list-style-type:disc">
+                        <li><b>Ph.D. in Informatique (Computer Science)</b>: Sampling and Inference in Complex Networks <br>
+                            INRIA Sophia Antipolis, INRIA-Bell Labs joint lab and Univ. of Nice Sophia Antipolis, France <br>
+                            <i>Supervisor: Dr. Konstantin Avrachenkov</i><br>
+                            <a href="./files/publications/Jithin_PhD_Thesis_abstract.pdf">[abstract]</a>
+                            <a href="./files/publications/Jithin_PhD_Thesis.pdf">[thesis]</a>
+                            <!-- <a href="./files/slides/Jithin_PhD_Thesis.pdf">[presentation]</a> -->
+                        </li>
+
+                        <li><b>M.Sc. (Engg.)</b>: Spectrum Sensing in Cognitive Radios using Distributed Sequential Detection<br>
+                            Dept. of Electrical Communication Engineering, Indian Institute of Science, Bangalore, India.
+                            <i>Supervisor: Prof. Vinod Sharma</i><br>
+                            <a href="./files/publications/Jithin_MSc-thesis_abstract.pdf">[abstract]</a>
+                            <a href="./files/publications/Jithin_MS_thesis.pdf">[thesis]</a>
+                            <a href="./files/slides/JJithin_MS_defense.pdf">[presentation]</a> <br>
+                            (<a style="color:#CC0000">Best MS thesis medal </a> from the Division of Electrical Sciences, IISc)
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <footer class="container">
+            <p>This website design is inspired from <a href="http://www.ece.iisc.ernet.in/~htyagi">here.<a></p>
+            </footer>
+
+            <script>
+            $(document).ready(function(){
+                // Add scrollspy to <body>
+                $('body').scrollspy({target: ".navbar", offset: 50});
+
+                // Add smooth scrolling on all links inside the navbar
+                $("#myNavbar a").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 400, function(){
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    }  // End if
+                });
+            });
+            </script>
+
+
+        </body>
+
+        </html>
