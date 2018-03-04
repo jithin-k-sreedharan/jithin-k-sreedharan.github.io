@@ -5,9 +5,9 @@
 <head>
     <title>Jithin K. Sreedharan</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -93,7 +93,8 @@
 
             <div class="intro" style="padding-top:10px">
                 <H3>Research Interests</H3>
-                Network science, statistical inference, spectral graph theory, detection and estimation
+                <!-- Network science, statistical inference, spectral graph theory, detection and estimation -->
+                I am primarily interested in the research with a balance of theory and experiments. My experience is primarily on network science. During my PhD, I worked on statistical inference problems in network science like random walk sampling of networks, decentralized spectral decomposition
                 <!-- <p>
             </p> -->
         </div>
@@ -155,7 +156,7 @@ Because of the significant increase in size and complexity of the networks, the 
                         <i>ACM SIGMETRICS / PERFORMANCE 2016, (acceptance rate: 13.5%) </i><br>
                         <a data-toggle="collapse" data-target="#sigmetrics2016">[abstract]</a>
                         <a href="./files/publications/Jithin_Sigmetrics_2016.pdf">[paper]</a>
-                        <a href="./files/slides/JKSreedharan_Sigmetrics_v2_pptsplit.pdf">[presentation]</a>
+                        <a href="./files/slides/JKSreedharan_Sigmetrics_v2_pptsplit.pdf">[slides]</a>
                         <a href="https://github.com/jithin-k-sreedharan/HypRW"> [code] </a>
                         <div class="collapse" id="sigmetrics2016">
                             Are Online Social Network (OSN) A users more likely to form friendships with those with similar attributes? Do users at an OSN B score content more favorably than OSN C users? Such questions frequently arise in the context of Social Network Analysis (SNA) but often crawling an OSN network via its Application Programming Interface (API) is the only way to gather data from a third party. To date, these partial API crawls are the majority of public datasets and the synonym of lack of statistical guarantees in incomplete-data comparisons, severely limiting SNA research progress. Using regenerative properties of the random walks, we propose estimation techniques based on short crawls that have proven statistical guarantees. Moreover, our short crawls can be implemented in massively distributed algorithms. We also provide an adaptive crawler that makes our method parameter-free, significantly improving our statistical guarantees. We then derive the Bayesian approximation of the posterior of the estimates, and in addition, obtain an estimator for the expected value of node and edge statistics in an equivalent configuration model or Chung-Lu random graph model of the given network (where nodes are connected randomly) and use it as a basis for testing null hypotheses. The theoretical results are supported with simulations on a variety of real-world networks.
@@ -167,7 +168,7 @@ Because of the significant increase in size and complexity of the networks, the 
                         <i>IEEE International Conference on Computer Communication (INFOCOM) 2016, (acceptance rate: 18.25%) </i><br>
                         <a data-toggle="collapse" data-target="#infocom2016">[abstract]</a>
                         <a href="./files/publications/Jithin_Infocom2016.pdf">[paper]</a>
-                        <a href="./files/slides/Jithin_Infocom_with-pause.pdf">[presentation]</a>
+                        <a href="./files/slides/Jithin_Infocom_with-pause.pdf">[slides]</a>
                         <a href="./files/publications/poster_Jithin_INRIA.pdf">[poster (Bell Labs Future days, Paris)]</a>
                         <div class="collapse" id="infocom2016">
                             In this paper we address the problem of finding top $k$ eigenvalues and corresponding eigenvectors of symmetric graph matrices in networks in a distributed way. We propose a novel idea called complex power iterations in order to decompose the eigenvalues and eigenvectors at node level, analogous to time-frequency analysis in signal processing. At each node, eigenvalues correspond to the frequencies of spectral peaks and respective eigenvector components are the amplitudes at those points. Based on complex power iterations and motivated from fluid diffusion processes in networks, we devise distributed algorithms with different orders of approximation. We also introduce a Monte Carlo technique with gossiping which substantially reduces the computational overhead. An equivalent parallel random walk algorithm is also presented. We validate the algorithms with simulations on real-world networks. Our formulation of the spectral decomposition can be easily adapted to a simple algorithm based on quantum random walks. With the advent of quantum computing, the proposed quantum algorithm will be extremely useful.
@@ -180,7 +181,7 @@ Because of the significant increase in size and complexity of the networks, the 
                         <i>5th International Conference on Computational Social Networks (CSoNet) 2016 </i> <br>
                         <a data-toggle="collapse" data-target="#csonet2016">[abstract]</a>
                         <a href="./files/publications/Jithin_Csonet_2016.pdf">[paper]</a>
-                        <a href="./files/slides/JKSreedharan_CSoNet16_pptsplit.pdf">[presentation]</a>
+                        <a href="./files/slides/JKSreedharan_CSoNet16_pptsplit.pdf">[slides]</a>
                         <a href="https://github.com/jithin-k-sreedharan/RL_based_RW_graph">[code]</a>
                         <div class="collapse" id="csonet2016">
                             Function estimation on Online Social Networks (OSN) is an important field of study in complex network analysis. An efficient way to do function estimation on large networks is to use random walks. We can then defer to the extensive theory of Markov chains to do error analysis of these estimators. In this work we compare two existing techniques, Metropolis-Hastings MCMC and Respondent-Driven Sampling, that use random walks to do function estimation and compare them with a new reinforcement learning based technique. We provide both theoretical and empirical analyses for the estimators we consider.        </div>
@@ -191,7 +192,7 @@ Because of the significant increase in size and complexity of the networks, the 
                             Konstantin Avrachenkov, Natalia M. Markovich and Jithin K. Sreedharan* <br>
                             <a data-toggle="collapse" data-target="#csn2015">[abstract]</a>
                             <a href="http://www.computationalsocialnetworks.com/content/pdf/s40649-015-0018-3.pdf">[paper]</a>
-                            <a href="./files/slides/Jithin_Maestro-retreat_Mar-15.pdf">[presentation]</a>
+                            <a href="./files/slides/Jithin_Maestro-retreat_Mar-15.pdf">[slides]</a>
                             <ul>
                                 <li><i>Computational Social Networks, Springer, 2015</i></li>
                                 <li><i>Third International IEEE Workshop on Complex Networks and their Applications, Nov 2014</i></li>
@@ -323,20 +324,28 @@ Because of the significant increase in size and complexity of the networks, the 
                 <H3>Theses</H3>
                 <p>
                     <ul style="list-style-type:disc">
-                        <li><b>Ph.D. in Informatique (Computer Science)</b>: Sampling and Inference in Complex Networks <br>
-                            INRIA Sophia Antipolis, INRIA-Bell Labs joint lab and Univ. of Nice Sophia Antipolis, France <br>
-                            <i>Supervisor: Dr. Konstantin Avrachenkov</i><br>
+                        <li><b>Ph.D. in Computer Science</b><br>
+                            Institut national de recherche en informatique et en automatique (INRIA), INRIA-Bell Labs joint lab and Univ. of Nice Sophia Antipolis, France <br>
+                            Thesis title: <i>Sampling and Inference in Complex Networks</i> <br>
+                            Thesis supervisor: <a href ="http://www-sop.inria.fr/members/Konstantin.Avratchenkov/me.html"> Dr. Konstantin Avrachenkov</a> <br>
+                            Thesis jury: Prof. Don Towsley (rapporteur), Prof. Nelly Litvak (rapporteur), Dr. Alain Jean-Marie (examinateur), Dr. Philippe Jacquet (examinateur)<br>
                             <a href="./files/publications/Jithin_PhD_Thesis_abstract.pdf">[abstract]</a>
                             <a href="./files/publications/Jithin_PhD_Thesis.pdf">[thesis]</a>
-                            <!-- <a href="./files/slides/Jithin_PhD_Thesis.pdf">[presentation]</a> -->
+                            <a href="./files/slides/Jithin_PhD_Thesis.pdf">[slides]</a>
+                            <a href="./files/publications/thesis/Jithin_PhD_report_Towsley.pdf">[report_Don-Towsley]</a>
+                            <a href="./files/publications/thesis/Jithin_PhD_report_Litvak.pdf">[report_Nelly-Litvak]</a>
+                            <!-- <a href="./files/slides/Jithin_PhD_Thesis.pdf">[slides]</a> -->
                         </li>
 
-                        <li><b>M.Sc. (Engg.)</b>: Spectrum Sensing in Cognitive Radios using Distributed Sequential Detection<br>
-                            Dept. of Electrical Communication Engineering, Indian Institute of Science, Bangalore, India.<br>
-                            <i>Supervisor: Prof. Vinod Sharma</i><br>
-                            <a href="./files/publications/Jithin_MSc-thesis_abstract.pdf">[abstract]</a>
-                            <a href="./files/publications/Jithin_MS_thesis.pdf">[thesis]</a>
-                            <a href="./files/slides/Jithin_MS_defense.pdf">[presentation]</a> <br>
+                        <li><b>M.Sc. (Engg.)</b> <br>
+                            Dept. of Electrical Communication Engineering, Indian Institute of Science (IISc), Bangalore, India.<br>
+                            Thesis title: <i>Spectrum Sensing in Cognitive Radios using Distributed Sequential Detection</i><br>
+                            Thesis supervisor: <a href="">Prof. Vinod Sharma</a><br>
+                            External reviewer: Prof. Shankar Prakriya <br>
+                            <a href="./files/publications/thesis/Jithin_MSc-thesis_abstract.pdf">[abstract]</a>
+                            <a href="./files/publications/thesis/Jithin_MSc_thesis.pdf">[thesis]</a>
+                            <a href="./files/slides/Jithin_MS_defense.pdf">[slides]</a>
+                            <a href="./files/slides/Jithin_MS_report_Prakriya.pdf">[report_Shankar-Prakriya]</a> <br>
                             (<a style="color:#CC0000">Best MS thesis medal </a> from the Division of Electrical Sciences, IISc)
                         </li>
                     </ul>
