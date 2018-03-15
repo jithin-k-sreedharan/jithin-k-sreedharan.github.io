@@ -1,16 +1,273 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <!-- <meta charset="UTF-8"> -->
-        <meta http-equiv="refresh" content="0; url=https://www.cs.purdue.edu/homes/jithinks/">
-        <!-- <script type="text/javascript">
-            window.location.href = "http://example.com"
-        </script> -->
-        <title>Page Redirection</title>
-    </head>
-    <body>
-        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
-        <!--I have finished my PhD from INRIA in December 2016. <br> -->
-        If you are not redirected automatically to my new website, please follow this <a href='https://www.cs.purdue.edu/homes/jithinks'>link</a>.
-    </body>
+<!DOCTYPE html>
+
+<html lang=“en”>
+<head>
+   <title>JithinKSreedharan</title>
+   <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+           
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+               
+               <style>
+
+                   
+               div.intro {
+                   
+                   padding-bottom:30px;
+                   padding-top:50px;
+                   border-bottom:1px solid lightgrey;
+                   
+               }
+
+               footer {
+                   font-size:10px;
+                   padding: 15px;
+               }
+               
+               </style>
+
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container" id="myNavbar" >
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home" style="color:#DC643F" class="active" >Jithin K.Sreedharan</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false">Publications
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#Publications">Journal</a></li>
+                        <li><a href="#Theses">Theses</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Publications">Publications</a></li>
+                <li><a href="http://www-sop.inria.fr/members/Jithin.Sreedharan/files/CV/Jithin_CV.pdf" target="_blank">
+                    Curriculum Vitae</a></li>
+            </ul>
+        </div>
+            </div>
+    </nav>
+    
+<div class="container">
+    
+    <div class="intro" id="home">
+        <br>
+        <br>
+        <br>
+        <div class="row">
+        <div class="col-sm-4">
+        <!--<p style="text-align:left" > -->
+<!--        <IMG src="pic/Pic2.jpg" alt="ProfilePic" class="img-rounded"-->
+<!--            style="float:left;width:329px;height:275px">-->
+            <IMG src="pic/Profile.jpg" alt="ProfilePic" class="img-circle"
+                style="float:left;width:275px;height:275px">
+               <!-- </p> -->
+                </div>
+        <div class="col-sm-8">
+            <article > <!--style="margin-left:400px; margin-top:30px"> -->
+                <h5>Affiliation</h5>
+                <p>
+                <!-- to do-->
+                </p>
+                <h5>Contact</h5>
+                <p>
+                Phone:
+                <br>
+                Email:<span class="glyphicon glyphicon-envelope"></span>
+                </p>
+                <p>
+                <h5>Academic</h5>
+                </p>
+            </article>
+            </div>
+            </div>
+            <!--</p>-->
+    </div>
+    
+    <div class="intro" style="padding-top:10px">
+        <H3>Research Interest</H3>
+        Network science, Statistical inference, Spectral graph theory, Information theory, Sequential detection and estimation
+        <p>
+        </p>
+    </div>
+    
+    <div class="intro" id="Publications">
+        <H3>Publications</H3>
+        <p>
+        *corresponding author,alphabetical author-list &nbsp &nbsp &nbsp **alphabetical author-list
+        
+        <ul style="list-style-type:disc" >
+        <li>&quotHamiltonian System Approach to Eigenvalue-Eigenvector Problem in Networks&quot,<br>
+        Konstantin Avrachenkov, Philippe Jacquet and Jithin K. Sreedharan*, submitted<br>
+        <a data-toggle="collapse" data-target="#ab1">[abstract]</a>
+        <a href="">[pdf]</a>
+        <div class="collapse" id="ab1">
+        In the framework of network sampling, random walk (RW) based estimation techniques provide many pragmatic solutions while uncovering the unknown network as little as possible. Despite several theoretical advances in this area, RW based sampling techniques usually make a strong assumption that the samples are in stationary regime, and hence are impelled to leave out the samples collected before the burn-in period. This work proposes two sampling schemes without burn-in constraint to estimate the average of an arbitrary function defined on the network nodes, for e.g. the average age of users in a social network. The central idea of the algorithms lies in exploiting regeneration of RWs at revisits to an aggregated super-node or to a set of nodes and in strategies to enhance the frequency of such regenerations either by contracting the graph or by making the hitting set larger. Our first algorithm, which is based on Reinforcement Learning (RL), takes advantage of the regeneration of RWs, and it uses stochastic approximation to derive an estimator. This method can be seen as intermediate between purely stochastic Markov Chain Monte Carlo iterations  and deterministic relative value iterations. We study this method via simulations on real networks and observe that its trajectories are much more stable than those of standard random walk based estimation procedures, and its error performance is comparable to that of respondent driven sampling (RDS) which has a smaller asymptotic variance than many other estimators. The second algorithm, which we call the RT estimator, is a modified form of RDS that accommodates the idea of regeneration. Simulation studies show that the mean squared error of RT estimator decays much faster than that of RDS with time.        </div>
+        </li><br>
+        
+        <li>&quotInference in OSNs via Lightweight Partial Crawls&quot,<br>Konstantin Avrachenkov, Bruno Ribeiro and Jithin K. Sreedharan*, ACM SIGMETRICS / PERFORMANCE 2016<br>
+        <a data-toggle="collapse" data-target="#ab2">[abstract]</a>
+        <a href="">[pdf]</a>
+        <div class="collapse" id="ab2">
+        abstract details here
+        </div>
+        </li><br>
+        
+        <li>&quotDistributed Spec-tral Decomposition in Networks by Complex Diffusion and Quantum Random Walk&quot,<br>Konstantin Avrachenkov, Philippe Jacquet and Jithin K. Sreedharan*,  IEEE International Conference on Computer Communication (INFOCOM) 2016<br>
+        <a data-toggle="collapse" data-target="#ab3">[abstract]</a>
+        <a href="">[pdf]</a>
+        <div class="collapse" id="ab3">
+        abstract details here
+        </div>
+        </li><br>
+
+        
+        <li>&quotComparison of random walk based techniques for estimating network averages&quot,<br>Konstantin Avrachenkov, Vivek S. Borkar, Arun Kadavankandy and and Jithin K. Sreedharan**, 5th International Conference on Computational Social Networks (CSoNet) 2016<br>
+        <a data-toggle="collapse" data-target="#ab4">[abstract]</a>
+        <a href="">[pdf]</a>
+        <div class="collapse" id="ab4">
+        abstract details here
+        </div>
+        </li><br>
+
+        
+        <li>&quotDistribution and Dependence of Extremes in Network Sampling Processes&quot,<br>Konstantin Avrachenkov, Natalia M. Markovich and Jithin K. Sreedharan*,
+        Computational Social Networks (Springer International Publishing), vol 2, 2015<br>
+        <a data-toggle="collapse" data-target="#ab5">[abstract]</a>
+        <a href="">[pdf]</a>
+        <div class="collapse" id="ab5">
+        abstract details here
+        </div>
+        </li><br>
+        
+        <li>Shorter version in Third International IEEE Workshop on Complex Networks and their
+        Applications, Nov 2014<br>
+        <a data-toggle="collapse" data-target="#ab6">[abstract]</a>
+        <a href="">[pdf]</a>
+        <div class="collapse" id="ab6">
+        abstract details here
+        </div>
+        </li><br>
+
+        
+        <li>&quotSpectrum sensing using distributed sequential detection via noisy reporting MAC&quot,<br>Jithin K. Sreedharan and Vinod Sharma, Signal Processing (Elsevier), Jan 2015<br>
+        <a data-toggle="collapse" data-target="#ab7">[abstract]</a>
+        <a href="">[pdf]</a>
+        <div class="collapse" id="ab7">
+        abstract details here
+        </div>
+        </li><br>
+
+        
+        <li>&quotNonparametric distributed sequential detection via universal source coding&quot,<br>Jithin K. Sreedharan and Vinod Sharma, Information Theory and Applications Workshop (ITA), Feb 2013<br>
+        <a data-toggle="collapse" data-target="#ab8">[abstract]</a>
+        <a href="">[pdf]</a>
+        <div class="collapse" id="ab8">
+        abstract details here
+        </div>
+        </li><br>
+        
+        <li>&quotSpectrum Sensing via Universal Source Coding&quot,<br>Jithin K. Sreedharan and Vinod Sharma,IEEE Global Communications Conference (GLOBECOM), Dec 2012<br>
+        <a data-toggle="collapse" data-target="#ab9">[abstract]</a>
+        <a href="">[pdf]</a>
+        <div class="collapse" id="ab9">
+        abstract details here
+        </div>
+        </li><br>
+
+        
+        <li>&quotNovel algorithms for distributed sequential hypothesis testing&quot,<br>K. S. Jithin and Vinod Sharma, 49th Annual Allerton Conference on Communication, Control and Computing, Sep 2011
+        <br>
+        <a data-toggle="collapse" data-target="#ab10">[abstract]</a>
+        <a href="">[pdf]</a>
+        <div class="collapse" id="ab10">
+        abstract details here
+        </div>
+        </li><br>
+        
+        <li>&quotA novel algorithm for cooperative distributed se- quential spectrum sensing in Cognitive Radio&quot,<br>Jithin K. Sreedharan and Vinod Sharma, IEEE Wireless Communications and Networking
+        Conference (WCNC), Mar 2011.<br>
+        <a data-toggle="collapse" data-target="#ab11">[abstract]</a>
+        <a href="">[pdf]</a>
+        <div class="collapse" id="ab11">
+        abstract details here
+        </div>
+        </li><br>
+        
+        <li>&quotCooperative distributed sequential spectrum sensing&quot,<br>K. S. Jithin, Vinod Sharma, and Raghav Gopalarathnam, IEEE National Conference on Communication (NCC), Jan 2011<br>
+        <a data-toggle="collapse" data-target="#ab12">[abstract]</a>
+        <a href="">[pdf]</a>
+        <div class="collapse" id="ab12">
+        abstract details here
+        </div>
+        </li><br>
+        
+        </ul>
+        
+        <h4 id="Theses">Theses</h4>
+        
+        <ul style="list-style-type:disc">
+        <li>Masters Thesis:Spectrum Sensing in Cognitive Radios using Distributed Sequential Detection,<br>
+        M.Sc. (Engg.) Thesis Department of Electrical Communication Engineering, Indian Institute of Science, Bangalore, India. </li><br>
+        <li>Phd Dissertation</li>
+        </ul>
+        
+        </p>
+        
+        </div>
+
+</div>
+
+<footer class="container">
+<p>Footer Text</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+// Add scrollspy to <body>
+$('body').scrollspy({target: ".navbar", offset: 50});
+
+// Add smooth scrolling on all links inside the navbar
+$("#myNavbar a").on('click', function(event) {
+// Make sure this.hash has a value before overriding default behavior
+if (this.hash !== "") {
+// Prevent default anchor click behavior
+event.preventDefault();
+
+// Store hash
+var hash = this.hash;
+
+// Using jQuery's animate() method to add smooth page scroll
+// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+$('html, body').animate({
+scrollTop: $(hash).offset().top
+}, 400, function(){
+
+// Add hash (#) to URL when done scrolling (default click behavior)
+window.location.hash = hash;
+});
+}  // End if
+});
+});
+</script>
+
+
+</body>
+
 </html>
