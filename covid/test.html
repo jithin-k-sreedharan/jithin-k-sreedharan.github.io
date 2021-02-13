@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>CSoI COVID-19 Research</title>
+  </head>
+  <body>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top""> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <div class="collapse navbar-collapse flex-column align-items-start ml-lg-2 ml-0" id="navbarCollapse">
+    <h2 class="media-heading text-left" style="color:#a91515">CSoI Research on COVID-19</h2>
+     <ul class="nav nav-tabs justify-content-end navbar-collapse" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#home">Analysis and prediction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#mobility">Mobility Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#methods">Data and Methods</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <a href="https://soihub.org/"> <img src="csoi_logo.png"  width="43" height="37" class="d-inline-block align-top" style = "margin-left:10px"> </a>
+      <a class="navbar-brand"  style = "margin-left:20px">
+      <img width="338" height="36" class="d-inline-block align-top" alt="" src ="CSI_H-Full-RGB_1.png"  href="../"/></a>
+    </div>
+  </div>
+</nav>
+      <br>
+      <br>
+      <br>
+
+    <div class="container">
+<!--       <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#home">Analysis and prediction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#mobility">Mobility Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#methods">Data and Methods</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#contact">Contact Us</a>
+        </li>
+      </ul> -->
+
+<!-- <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CSoI Research on COVID-19</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav> -->
+
+
+      <br>
+      <div class="tab-content">
+      <div id = "home" class="container tab-pane active">
+        <br>
+         <!-- <h6>Work</h6> -->
+         <div class="main-wrapper">
+
+         <div class="row">
+            <div class="col-0 col-xs-12 col-sm-12 col-md-3  col-lg-3">
+                <figure>
+                    <img  class="img-fluid" alt="Corona Virus" src="coronavirus.jpg">
+                    <figcaption><small>Image taken from <a href="https://phil.cdc.gov/Details.aspx?pid=23312">CDC PHIL</a></small>
+                    </figcaption>
+                </figure>
+
+            </div>
+            <div class="col-12 col-xs-12  col-lg-9 col-sm-12 col-md-9">
+              <p>
+                <a href = "#contact">Members</a> of the <a href = "https://soihub.org/">
+                  Center for Science of Information (CSoI)
+                </a>
+                 are working on epidemiological models
+                    and predictions of spread of Covid-19 infection, the impact of social distancing guidelines,
+                    and providing guidance for policy-making. These efforts are aimed at understanding the
+                    current state of the epidemic (is it waxing or waning?), estimating the state in the future (its
+                    expected progression under different policy scenarios), and impact of various interventions
+                    (e.g., reopening workplaces, schools, etc.)
+              </p>
+            </div>
+          </div>
+<p>
+Models are only as good as the data used to construct them. To this end, the CSoI team incorporates disparate data to fundamentally enhance the predictive accuracy of the models. Working with data from Facebook, mobility data across counties is being incorporated into new models. This data allows one to assess the impact of stay-at-home guidelines, as well as best approaches to relax these guidelines.
+<!-- With availability of data at increasingly refined scales (e.g., data on movement across campus buildings), they are building fine-grained models for controlled activities that minimize risk of subsequent spread.  -->
+<!-- The ability to accurately scale models from the entire country down to individual buildings allows decision-making at various levels, and to assess the integrated impact of these decisions at coarser levels. -->
+</p>
+        </div>
+
+         <hr>
+          <h4 class="media-heading text-left" >Estimation of reproductive number</h4>
+          <p>(Last data update: R<sub>o</sub> estimation and infections prediction - 4/27)<p>
+         <p>
+A useful indicator of the current state of the epidemic is the basic reproduction number (also sometimes referred to as the basic reproduction ratio). Typically represented by R<sub>o</sub> (pronounced R-nought), this number is the <i> average number of individuals infected by each infected individual </i>. One may observe that a value of R<sub>o</sub> greater than 1 corresponds to a spreading infection, R<sub>o</sub> less than 1 corresponds to a waning infection, and R<sub>o</sub> equal to one corresponds to a stable infected count.
+</p>
+<p>
+Estimating R<sub>o</sub>, though, is hard because of sparse observational data, uncertainty associated with population parameters, and variability in responses to exposure and infection. Work at CSoI has focused not just on estimating values of R<sub>o</sub>, but also on characterizing the uncertainty associated with the value due to estimated uncertainty of population parameters. By building models for each county, these results clearly demonstrate the conformance and effectiveness of social distancing. An important aspect of this work is its use of novel computation techniques to estimate parameters for counties with sparse case reporting.
+</p>
+<p>
+The R<sub>o</sub> value for various counties in Indiana has emerged from one indicating a spike in infections (or more tests conducted) in Indiana, although, there is a band of uncertainty around these values.
+</p>
+<!--           A useful indicator of the current (local) state of the
+            epidemic is the basic reproduction number (also sometimes referred to as the basic reproduction
+            ratio). Typically represented by R<sub>o</sub> (pronounced R-nought), this number is the expected number
+            of individuals infected by each infected individual. One may observe that a value of R<sub>o</sub> greater
+            than 1 corresponds to a spreading infection, R<sub>o</sub> less than 1 corresponds to a waning infection,
+            and R<sub>o</sub> equal to one corresponds to a stable infected count. Estimating R<sub>o</sub>, though, is hard
+            because of sparse observational data, uncertainty associated with population parameters, and
+            variability in responses to exposure and infection. Work at CSoI has focused not just on
+            estimating values of R<sub>o</sub>, but also on characterizing the uncertainty associated with the value
+            due to estimated uncertainty of population parameters. By building models (see Figure plotting
+            values of R<sub>o</sub> for various counties in Indiana) for each county, these results clearly demonstrate
+            the conformance and effectiveness of social distancing. An important aspect of this work is
+            its use of novel imputation techniques to estimate parameters for counties with sparse case
+            reporting. These results indicate that the R<sub>o</sub> value for various counties in Indiana is now less
+            than one, although, there is a band of uncertainty around this value that potentially takes it
+            above one. Overall, the R<sub>o</sub> value for the state of Indiana as a whole is now trending to one,
+            and lower, indicating that the peak of infection is near, due to the lag from time of infection to
+            time of testing/ hospitalization. These results present a clear picture of the state of the epidemic
+            in various county -- of particular note are counties like Lake County, where the value or R<sub>o</sub> is
+            still significantly greater than one. -->
+          </p>
+
+            <br>
+            <header >
+                <img id="myImg1" src="state_R0_2020-04-27.png" class="img-fluid" alt="The figure shows the estimates of R<sub>o</sub> up to April  20.
+                The estimation is done with the New York Times COVID-19 data that is
+                available until April 25 and discounts the time period requires
+                 for transition from exposed to infected state which is roughly 5 days">
+                <small>&quot;The figure shows the estimates of R<sub>o</sub> up to April  20.
+                  The estimation is done with the New York Times COVID-19 data that is
+                  available until April 25 and discounts the time period requires
+                   for transition from exposed to infected state which is roughly 5 days  &quot; </small>
+                    <br>
+            </header>
+             <br>
+<!--           <p>
+            Models are only as good as the data used to construct them. To this end, the CSoI team incorporates
+            disparate data to fundamentally enhance the predictive accuracy of the models.
+            Working with data from Facebook, mobility data across counties is being incorporated into
+            new models. This data allows one to assess the impact of stay-at-home guidelines, as well
+            as best approaches to relax these guidelines. With availability of data at increasingly refined
+            scales (e.g., data on movement across campus buildings), they are building fine-grained models for
+            controlled activities that minimize risk of subsequent spread. The ability to accurately scale models
+            from the entire country down to individual buildings allows decision-making at various levels, and
+            to assess the integrated impact of these decisions at coarser levels.
+
+         </p> -->
+         <hr>
+         <h4 class="media-heading text-left" >Prediction of Infected Cases</h4>
+         <ol>
+          <li><b>Incorporating the mobility data between the counties.</b>
+            <img id="myImg4" src="infections_Colocation_2020-04-27.png" class="img-fluid" >
+          </li>
+          <li><b>With no mobility between the counties.</b>
+            <img id="myImg5" src="infections_NoColocation_2020-04-27.png" class="img-fluid" >
+          </li>
+        </ol>
+         <h5>Probability distribution of the infected cases on a specific date</h5>
+         <ol>
+           <li>
+            <img id="myImg6" src="prediction_on_specific_day_Colocation_2020-04-27.png" class="img-fluid" >
+          </li>
+           <li>
+            <img id="myImg7" src="prediction_on_specific_day_NoColocation_2020-04-27.png" class="img-fluid" >
+          </li>
+         </ol>
+
+
+          </div> <!--home tab end-->
+
+      <div id = "contact" class="container tab-pane fade">
+
+            For more information about this or other projects, please contact CSoI Director and CSoI Managing Director.
+            <p></p>
+            <h5>Researchers</h5>
+            <ul>
+              <li><a href = "https://www.cs.purdue.edu/homes/jithinks/">Jithin Sreedharan</a></li>
+              <li><a href = "https://www.cs.purdue.edu/people/faculty/ayg" >Ananth Grama</a></li>
+              <li><a href = "https://www.cs.purdue.edu/homes/spa/">Wojciech Szpankowski, CSoI Director</a></li>
+            </ul>
+            <h5>CSoI Managing Director </h5>
+            <ul>
+                <li><a href = "mailto:bobbrown@purdue.edu" >Bob Brown, CSoI Managing Director</a> </li>
+            </ul>
+          </div> <!--contact tab end-->
+
+      <div id = "mobility" class="container tab-pane fade">
+            <p>
+              <strong>Is Social Distancing occurring? We provide a mobility
+              analysis of Indiana counties with the data from <a href = "https://dataforgood.fb.com/">Facebook Data for Good</a>.</strong>
+              <ul>
+              <li>Last data update of mobility reports - 4/28 </li>
+              <li>Indiana Counties Ohio and Warren are removed from these plots due to insufficient location-history-enabled Facebook population </li>
+              <li>For more detailed mobility reports of specific counties, please contact us
+            </ul>
+            </p>
+            <br>
+            <h5 class="media-heading text-left"> Mobility of Indiana residents, a comparison study with the pre-crisis level</h5>
+            <br>
+            <img id="myImg2" src="mobility_relative_change.png" class="img-fluid" alt="All the images have high resolution. Please zoom it to see the details">
+              <br><br>
+              <h5 class="media-heading text-left"> How many people are staying-at-home (or moving only within a 0.6 km x 0.6 km tile)?</h5>
+              <br>
+              <img id="myImg3" src="mobility_stayed_put.png" class="img-fluid" alt='All the images have high resolution. Please zoom it to see the details'>
+        </div> <!--mobility tab end-->
+
+        <div id = "methods" class="container tab-pane fade">
+          <h5>Data</h5>
+          <p>The main data source for our analysis
+            and prediction is the New York Times COVID-19 data repository</p>
+
+
+          <h5>Methods</h5>
+          <ul>
+            <li> Some counties are not shown in the figures because of insufficient data to provide accurate analysis.</li>
+            <li>As we get more data, we will start incorporating them.</li>
+          </ul>
+          <p>
+            For more about technical details behind these graphs, please click
+          <a href="IDMOD_model.pdf" target = "_blank">here</a>.
+          </p>
+
+        </div> <!--data & methods tab end-->
+
+
+
+    </div> <!--Tab content end-->
+    <hr>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+for (var i =1; i <8;i+=1){
+var img1 = document.getElementById("myImg" + i);
+img1.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>

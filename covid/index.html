@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>CSoI COVID-19 Research</title>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top first-nav d-none d-sm-block">
+    <div class="container">
+      <h2 class="media-heading text-left collapse navbar-collapse" style="color:#a91515">CSoI Research on COVID-19</h2>
+    <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+      <a href="https://soihub.org/">
+        <img src="csoi_logo.png"  width="43" height="37" class="d-inline-block align-top" >
+      </a>
+      <a class="navbar-brand " >
+      <img width="338" height="36" class="d-inline-block align-top" alt="" src ="CSI_H-Full-RGB_1.png"  href="../"/></a>
+    </div>
+  </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top second-nav">
+    <div class="container">
+      <h2 class="navbar-brand d-block d-sm-none media-heading" style="color:#a91515"><strong>CSoI Research on COVID-19</strong></h2>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav mr-auto" >
+      <li class="nav-item active">
+        <a class="nav-link"  href="index.html">Analysis and prediction</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="mobility.html">Mobility Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="methods.html">Data and Methods</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="contact.html" >Contact Us</a>
+      </li>
+    </ul>
+    </div>
+    </div>
+  </div>
+  </nav>
+<br>
+
+<div class="container">
+  <div class = "d-none d-sm-block">
+
+  </div>
+  <br><br><br>
+      <div >
+        <br>
+         <div class="main-wrapper">
+         <div class="row">
+            <div class="col-0 col-xs-12 col-sm-12 col-md-3  col-lg-3">
+                <figure>
+                     <a href="https://phil.cdc.gov/Details.aspx?pid=23312">
+                      <img  class="img-fluid"  alt="Corona Virus" src="coronavirus.jpg">
+                    </a>
+                </figure>
+
+            </div>
+            <div class="col-12 col-xs-12  col-lg-9 col-sm-12 col-md-9">
+              <p>
+                <a href = "contact.html">Members</a> of the <a href = "https://soihub.org/">
+                  Center for Science of Information (CSoI)
+                </a>
+                 are working on epidemiological models
+                    and predictions of spread of Covid-19 infection, the impact of social distancing guidelines,
+                    and providing guidance for policy-making. These efforts are aimed at understanding the
+                    current state of the epidemic (is it waxing or waning?), estimating the state in the future (its
+                    expected progression under different policy scenarios), and impact of various interventions
+                    (e.g., reopening workplaces, schools, etc.)
+              </p>
+            </div>
+          </div>
+      <p>
+      Models are only as good as the data used to construct them. To this end, the CSoI team incorporates disparate data to fundamentally enhance the predictive accuracy of the models. Working with data from Facebook, mobility data across counties is being incorporated into new models. This data allows one to assess the impact of stay-at-home guidelines, as well as best approaches to relax these guidelines.
+      </p>
+        </div>
+
+         <hr>
+          <h4 class="media-heading text-left" >Estimation of reproductive number</h4>
+          <p>(Last data update: R<sub>o</sub> estimation and prediction of infections - 05/13)</p>
+         <p>
+A useful indicator of the current state of the epidemic is the basic reproduction number (also sometimes referred to as the basic reproduction ratio). Typically represented by R<sub>o</sub> (pronounced R-nought), this number is the <i> average number of individuals infected by each infected individual </i>. One may observe that a value of R<sub>o</sub> greater than 1 corresponds to a spreading infection, R<sub>o</sub> less than 1 corresponds to a waning infection, and R<sub>o</sub> equal to one corresponds to a stable infected count.
+</p>
+<p>
+Estimating R<sub>o</sub>, though, is hard because of sparse observational data, uncertainty associated with population parameters, and variability in responses to exposure and infection. Work at CSoI has focused not just on estimating values of R<sub>o</sub>, but also on characterizing the uncertainty associated with the value due to estimated uncertainty of population parameters. By building models for each county, these results clearly demonstrate the conformance and effectiveness of social distancing. An important aspect of this work is its use of novel computation techniques to estimate parameters for counties with sparse case reporting.
+</p>
+<p>
+The R<sub>o</sub> value for various counties in Indiana has emerged from one indicating a spike in infections (or more tests conducted) in Indiana, although, there is a band of uncertainty around these values.
+</p>
+
+
+            <br>
+            <div class = "row">
+              <div class ="col-12 col-md-12 col-lg-12">
+
+                <img id="myImg3"  src="images/state_R0.png"  class="img-fluid NO-CACHE asyncImage" alt="All the images have a high resolution. Please zoom it or view in Landscape mode (on mobile) to see the details.">
+                The estimation discounts the time period requires
+                   for transition from exposed to infected state which is roughly 5 days.
+                  </div>
+              </div>
+              <br>
+              <br>
+    <hr>
+
+<!--     <p><strong>Disclaimer </strong></p>
+    <small>
+    <p>
+      The website relies upon publicly available data and various statistical assumptions.
+      The predictions presented here are usually over estimated values and can only be considered
+      by taking into account the uncertainties in the statistical procedures. The creators
+      hereby disclaim any and all representations and warranties with respect to the website,
+      including accuracy, fitness for use, and merchantability.
+    </p> -->
+    <small>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+      <span class="close" id = "modalClose">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    </div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/igorlino/elevatezoom-plus@1.2.3/src/jquery.ez-plus.js"></script>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+for (var i =3; i <4;i+=1){
+var img1 = document.getElementById("myImg" + i);
+img1.onclick = function(){
+modal.style.display = "block";
+modalImg.src = this.src;
+captionText.innerHTML = this.alt;
+}
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+var nods = document.getElementsByClassName('NO-CACHE');
+for (var i = 0; i < nods.length; i++)
+{
+    nods[i].attributes['src'].value += "?a=" + Math.random();
+}
+
+(() => {
+  'use strict';
+  // Page is loaded
+  const objects = document.getElementsByClassName('asyncImage');
+  Array.from(objects).map((item) => {
+    // Start loading image
+    const img = new Image();
+    img.src = item.dataset.src;
+    // Once image is loaded replace the src of the HTML element
+    img.onload = () => {
+      item.classList.remove('asyncImage');
+      return item.nodeName === 'IMG' ?
+        item.src = item.dataset.src :
+        item.style.backgroundImage = `url(${item.dataset.src})`;
+    };
+  });
+})();
+
+
+setTimeout(function() {
+  $('#loading').addClass('hidden');
+}, 3000);
+
+</script>
+
+</body>
+</html>

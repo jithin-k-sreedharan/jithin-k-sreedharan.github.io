@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>CSoI COVID-19 Research</title>
+</head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top first-nav d-none d-sm-block">
+      <div class="container">
+        <h2 class="media-heading text-left collapse navbar-collapse" style="color:#a91515">CSoI Research on COVID-19</h2>
+      <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+        <a href="https://soihub.org/">
+          <img src="csoi_logo.png"  width="43" height="37" class="d-inline-block align-top" >
+        </a>
+        <a class="navbar-brand " >
+        <img width="338" height="36" class="d-inline-block align-top" alt="" src ="CSI_H-Full-RGB_1.png"  href="../"/></a>
+      </div>
+    </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top second-nav">
+      <div class="container">
+        <h2 class="navbar-brand d-block d-sm-none media-heading" style="color:#a91515"><strong>CSoI Research on COVID-19</strong></h2>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto" >
+        <li class="nav-item">
+          <a class="nav-link"  href="index.html">Analysis and prediction</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link"  href="mobility.html">Mobility Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="methods.html">Data and Methods</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="contact.html" >Contact Us</a>
+        </li>
+      </ul>
+      </div>
+      </div>
+    </div>
+    </nav>
+  <br>
+
+
+
+
+<div class="container">
+  <br><br><br>
+    <br>
+    <p>
+      <strong>Is Social Distancing occurring? We provide a mobility
+      analysis of Indiana counties with the data from <a href = "https://dataforgood.fb.com/">Facebook Data for Good</a>.</strong>
+      <ul>
+      <li>Last data update of mobility reports - 5/13 </li>
+      <li>Indiana Counties Ohio and Warren are removed from these plots due to insufficient location-history-enabled Facebook population </li>
+      <li>For more detailed mobility reports of specific counties, please contact us
+    </ul>
+    </p>
+    <br>
+    <h5 class="media-heading text-left"> Mobility of Indiana residents, a comparison study with the pre-crisis level</h5>
+    <br>
+    <div class = "row">
+      <div class ="col-12 col-md-12 col-lg-12">
+     <img id="myImg1" src="images/mobility_relative_change.png" class="img-fluid NO-CACHE asyncImage" alt="All the images have a high resolution. Please zoom it or view in Landscape mode (on mobile) to see the details.">
+        </div></div>
+      <br><br>
+      <h5 class="media-heading text-left"> How many people are staying-at-home (or moving only within a 0.6 km x 0.6 km tile)?</h5>
+      <br>
+      <div class = "row">
+        <div class ="col-12 col-md-12 col-lg-12">
+      <img id="myImg2" src="images/mobility_stayed_put.png" class="img-fluid NO-CACHE asyncImage" alt='All the images have a high resolution. Please zoom it or view in Landscape mode (on mobile) to see the details.'>
+          </div></div>
+    <hr>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+      <span class="close" id = "modalClose">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    </div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/igorlino/elevatezoom-plus@1.2.3/src/jquery.ez-plus.js"></script>
+<script>
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+for (var i =1; i <3;i+=1){
+var img1 = document.getElementById("myImg" + i);
+img1.onclick = function(){
+modal.style.display = "block";
+modalImg.src = this.src;
+captionText.innerHTML = this.alt;
+// $('#myImg' + i).ezPlus();
+
+}
+}
+
+var nods = document.getElementsByClassName('NO-CACHE');
+for (var i = 0; i < nods.length; i++)
+{
+    nods[i].attributes['src'].value += "?a=" + Math.random();
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+</script>
+
+</body>
+</html>
