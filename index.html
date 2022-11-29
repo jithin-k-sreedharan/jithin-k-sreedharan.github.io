@@ -129,18 +129,20 @@
     <div class="row ">
       <div class="col-md-3 ">
         <!-- <h4></h4> -->
-        <img src="./Jithin K. Sreedharan_files/profile.jpg " alt=" " class="img-thumbnail" style="width:90% " border="0">
+        <img src="./Jithin K. Sreedharan_files/profile.jpg " alt=" " class="img-thumbnail" style="width:90% "
+          border="0">
       </div>
 
       <div class="col-md-7 ">
         <p>
-          I am an Assistant Professor at <a href="https://www.cse.iitk.ac.in/">Department of Computer Science and Engineering</a>, <a href="https://www.iitk.ac.in/">Indian Institute of Technology, Kanpur</a>
+          I am an Assistant Professor at <a href="https://www.cse.iitk.ac.in/">Department of Computer Science and
+            Engineering</a>, <a href="https://www.iitk.ac.in/">Indian Institute of Technology, Kanpur</a>
         </p>
         <p>
         <h4>Previous positions</h4>
         <ul>
           <li>Machine Learning Scientist at <a href="https://www.wadhwaniai.org">Wadhwani Institute for Artificial
-            Intelligence</a>, developing AI solutions for Social Impact</li>
+              Intelligence</a>, developing AI solutions for Social Impact</li>
           <li>Postdoctoral Research Associate in the <a href="https://www.soihub.org ">NSF Center for Science of
               Information (CSoI)</a> and <a href="https://www.cs.purdue.edu/">Dept. of Computer Science</a> at Purdue
             University, U.S.A. </li>
@@ -170,8 +172,9 @@
     follow a multifaceted approach of problem solving: theoretical modeling, designing and analyzing low complexity
     algorithms, and verifying it on real-world data. My research focus on data mining algorithms for large networks with
     probabilistic guarantees, statistical modeling and inference on networks, and distributed techniques for analyzing
-    big network matrices. I am also interested in application of machine learning to various inference problems on
-    networks, and, in general, stochastic modeling of complex systems.
+    big network matrices. I am also interested in application of machine learning to healthcare and social good.
+    <!-- I am also interested in application of machine learning to various inference problems on -->
+    <!-- networks, and, in general, stochastic modeling of complex systems. -->
 
     <!--         <div class="page-header " id="COVID ">
           <h3><font style="color:#CC0000"> Ongoing work related to COVID-19</font> </h3> </div>
@@ -203,15 +206,79 @@ In temporal ordered clustering, given a single snapshot of a dynamic network, we
                     </p>
                   </li>
                 </ul> -->
-    <h4>Peer-reviewed papers</h4>
+    <!-- <h4>Peer-reviewed papers</h4> -->
     <ul style="list-style-type:disc ">
+      <li>
+        <p>
+          Predicting Treatment Adherence of Tuberculosis Patients at Scale
+          <br>
+          with Wadhwani AI, USAID, Central TB Division (Govt. of India), and WHO teams
+          <br>
+          <i>Proc. of Machine Learning Research, Machine Learning for Health (ML4H) Symposium, 2022 </i><br>
+          <button class="btn btn-link" data-toggle="collapse" data-target="#tit2022">[abstract]</button>
+          <a href="https://arxiv.org/pdf/2211.02943.pdf">[paper]</a>
+          (<b>Outstanding Paper Award</b>)
+          <!-- <a href="./files/publications/mohsen-jithin_icml2021_sm.pdf">[supplementary material]</a>
+          <a href="https://github.com/jithin-k-sreedharan/Fourier_feature_selection">[code]</a> -->
+        <div id="tit2022" class="collapse">
+          Tuberculosis (TB), an infectious bacterial disease, is a significant cause of death, especially in low-income
+          countries, with an estimated ten million new cases reported globally in \(2020\). While TB is treatable,
+          non-adherence to the medication regimen is a significant cause of morbidity and mortality. Thus, proactively
+          identifying patients at risk of dropping off their medication regimen enables corrective measures to mitigate
+          adverse outcomes. Using a proxy measure of extreme non-adherence and a dataset of nearly \(700,000\) patients
+          from four states in
+          India, we formulate and solve the machine learning (ML) problem of early prediction of non-adherence based on
+          a custom rank-based metric. We train ML models and evaluate against baselines, achieving a \(\sim 100\%\) lift
+          over rule-based baselines and
+          \(\sim 214\%\) over a random classifier, taking into account country-wide large-scale future deployment.
+          We deal with various issues in the process, including data quality, high-cardinality categorical data, low
+          target prevalence, distribution shift, variation across cohorts, algorithmic fairness, and the need for
+          robustness and explainability. Our findings indicate that risk stratification of non-adherent patients is a
+          viable, deployable-at-scale ML solution.
+        </div>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Deploying Covid-19 Case Forecasting Models in the Developing World
+          <br>
+          with Wadhwani AI team
+          <br>
+          <i>Chapter in the book <a href="https://ai4sibook.org">AI for Social Impact</a> (ed. by Milind Tambe and Fei
+            Fang and Bryan Wilder), 2022 </i><br>
+          <button class="btn btn-link" data-toggle="collapse" data-target="#tit2022">[abstract]</button>
+          <a href="https://ai4sibook.org/wp-content/uploads/2022/08/covid-forecasting-models.pdf">[paper]</a>
+          <br>
+          (Deployed ML solution for COVID-19 case prediction. Partners for data and for usage of the solution were the Brihanmumbai Municipal
+          Corporation, Mumbai, and the Integrated Disease Surveillance Programme, Jharkhand)
+          <!-- <a href="./files/publications/mohsen-jithin_icml2021_sm.pdf">[supplementary material]</a>
+          <a href="https://github.com/jithin-k-sreedharan/Fourier_feature_selection">[code]</a> -->
+        <div id="tit2022" class="collapse">
+          Forecasting infection case counts and estimating accurate epidemiological parameters are critical components
+          of managing the response to a pandemic. This paper describes a modular, extensible framework for a COVID-19
+          forecasting system, primarily deployed during the first Covid wave in Mumbai and Jharkhand, India. We employ a
+          variant of the SEIR compartmental model motivated by the nature of the available data and operational
+          constraints. We estimate best fit parameters using Sequential Model-Based Optimization (SMBO), and describe
+          the use of a novel, fast and approximate Bayesian model averaging method (ABMA) for parameter uncertainty
+          estimation that compares well with a more rigorous Markov Chain Monte Carlo (MCMC) approach in practice. We
+          address on-the-ground deployment challenges such as spikes in the reported input data using a novel weighted
+          smoothing method. We describe extensive empirical analyses to evaluate the accuracy of our method on ground
+          truth as well as against other state-of-the-art approaches. Finally, we outline deployment lessons and
+          describe how inferred model parameters were used by government partners to interpret the state of the epidemic
+          and how model forecasts were used to estimate staffing and planning needs essential for addressing COVID-19
+          hospital burden.
+        </div>
+        </p>
+      </li>
+
       <li>
         <p>
           Sufficiently Informative and Relevant Features: An Information-theoretic and Fourier-based Characterization
           <br>
           Mohsen Heidari, Jithin K. Sreedharan, Gil Shamir, and Wojciech Szpankowski
           <br>
-          Accepted to <i>IEEE Transactions on Information Theory, 2022 </i><br>
+          <i>IEEE Transactions on Information Theory, 2022 </i><br>
           <!-- <button class="btn btn-link" data-toggle="collapse" data-target="#tit2022">[abstract]</button>
           <a href="./files/publications/mohsen-jithin_icml2021.pdf">[paper]</a>
           <a href="./files/publications/mohsen-jithin_icml2021_sm.pdf">[supplementary material]</a>
@@ -451,186 +518,232 @@ In temporal ordered clustering, given a single snapshot of a dynamic network, we
           <!-- <span style="color:#FF6347" ;>&#10033</span> Revisiting Random Walk based Sampling in Networks: Evasion of -->
           <!-- Burn-in Period and Frequent Regenerations,<br> -->
           <span;>&#10033</span> Revisiting Random Walk based Sampling in Networks: Evasion of
-          Burn-in Period and Frequent Regenerations,<br>
-          (<span;>alphabetical order</span>) Konstantin Avrachenkov, Vivek S. Borkar, Arun
-          Kadavankandy and Jithin K. Sreedharan <br>
-          <i>Computational Social Networks, Springer, 2018 </i> <br>
-          <button class="btn btn-link" data-toggle="collapse" data-target="#csn2018">[abstract]</button>
-          <!-- <a data-toggle="collapse" data-target="#csn2018">[abstract]</a> -->
-          <a
-            href="https://computationalsocialnetworks.springeropen.com/track/pdf/10.1186/s40649-018-0051-0?site=computationalsocialnetworks.springeropen.com">[paper]</a>
-        <div class="collapse" id="csn2018">
-          In the framework of network sampling, random walk (RW) based estimation techniques provide many pragmatic
-          solutions while uncovering the unknown network as little as possible. Despite several theoretical advances in
-          this area, RW based sampling techniques
-          usually make a strong assumption that the samples are in stationary regime, and hence are impelled to leave
-          out the samples collected before the burn-in period. This work proposes two sampling schemes without burn-in
-          constraint
-          to estimate the average of an arbitrary function defined on the network nodes, for e.g. the average age of
-          users in a social network. The central idea of the algorithms lies in exploiting regeneration of RWs at
-          revisits to an aggregated
-          super-node or to a set of nodes and in strategies to enhance the frequency of such regenerations either by
-          contracting the graph or by making the hitting set larger. Our first algorithm, which is based on
-          Reinforcement Learning
-          (RL), takes advantage of the regeneration of RWs, and it uses stochastic approximation to derive an estimator.
-          This method can be seen as intermediate between purely stochastic Markov Chain Monte Carlo iterations and
-          deterministic
-          relative value iterations. We study this method via simulations on real networks and observe that its
-          trajectories are much more stable than those of standard random walk based estimation procedures, and its
-          error performance is
-          comparable to that of respondent driven sampling (RDS) which has a smaller asymptotic variance than many other
-          estimators. The second algorithm, which we call the RT estimator, is a modified form of RDS that accommodates
-          the idea
-          of regeneration. Simulation studies show that the mean squared error of RT estimator decays much faster than
-          that of RDS with time.
-        </div>
+            Burn-in Period and Frequent Regenerations,<br>
+            (<span;>alphabetical order</span>) Konstantin Avrachenkov, Vivek S. Borkar, Arun
+              Kadavankandy and Jithin K. Sreedharan <br>
+              <i>Computational Social Networks, Springer, 2018 </i> <br>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#csn2018">[abstract]</button>
+              <!-- <a data-toggle="collapse" data-target="#csn2018">[abstract]</a> -->
+              <a
+                href="https://computationalsocialnetworks.springeropen.com/track/pdf/10.1186/s40649-018-0051-0?site=computationalsocialnetworks.springeropen.com">[paper]</a>
+              <div class="collapse" id="csn2018">
+                In the framework of network sampling, random walk (RW) based estimation techniques provide many
+                pragmatic
+                solutions while uncovering the unknown network as little as possible. Despite several theoretical
+                advances in
+                this area, RW based sampling techniques
+                usually make a strong assumption that the samples are in stationary regime, and hence are impelled to
+                leave
+                out the samples collected before the burn-in period. This work proposes two sampling schemes without
+                burn-in
+                constraint
+                to estimate the average of an arbitrary function defined on the network nodes, for e.g. the average age
+                of
+                users in a social network. The central idea of the algorithms lies in exploiting regeneration of RWs at
+                revisits to an aggregated
+                super-node or to a set of nodes and in strategies to enhance the frequency of such regenerations either
+                by
+                contracting the graph or by making the hitting set larger. Our first algorithm, which is based on
+                Reinforcement Learning
+                (RL), takes advantage of the regeneration of RWs, and it uses stochastic approximation to derive an
+                estimator.
+                This method can be seen as intermediate between purely stochastic Markov Chain Monte Carlo iterations
+                and
+                deterministic
+                relative value iterations. We study this method via simulations on real networks and observe that its
+                trajectories are much more stable than those of standard random walk based estimation procedures, and
+                its
+                error performance is
+                comparable to that of respondent driven sampling (RDS) which has a smaller asymptotic variance than many
+                other
+                estimators. The second algorithm, which we call the RT estimator, is a modified form of RDS that
+                accommodates
+                the idea
+                of regeneration. Simulation studies show that the mean squared error of RT estimator decays much faster
+                than
+                that of RDS with time.
+              </div>
         </p>
       </li>
 
       <li>
-        <p><span;>&#10033</span> Hamiltonian System Approach to Eigenvalue-Eigenvector Problem in
-          Networks <br>
-          (<span;>alphabetical order</span>) Konstantin Avrachenkov, Philippe Jacquet and Jithin
-          K. Sreedharan* <br>
-          <i>IEEE International Workshop on Multidimensional (nD) Systems (nDS) 2017 </i> <br>
-          <button class="btn btn-link" data-toggle="collapse" data-target="#nds2017">[abstract]</button>
-          <!-- <a data-toggle="collapse" data-target="#nds2017">[abstract]</a> -->
-          <a href="./files/publications/nDS_2017.pdf ">[paper]</a>
-        <div class="collapse" id="nds2017">
-          Because of the significant increase in size and complexity of the networks, the distributed computation of
-          eigenvalues and eigenvectors of graph matrices has become very challenging and yet it remains as important as
-          before. In this paper we develop efficient
-          distributed algorithms to detect, with higher resolution, closely situated eigenvalues and corresponding
-          eigenvectors of symmetric graph matrices. We model the system of graph spectral computation as physical
-          systems with Lagrangian
-          and Hamiltonian dynamics. The spectrum of Laplacian matrix, in particular, is framed as a classical
-          spring-mass system with Lagrangian dynamics. The spectrum of any general symmetric graph matrix turns out to
-          have a simple connection
-          with quantum systems and it can be thus formulated as a solution to a Schr\"odinger-type differential
-          equation. Taking into account the higher resolution requirement in the spectrum computation and the related
-          stability issues
-          in the numerical solution of the underlying differential equation, we propose the application of symplectic
-          integrators to the calculation of eigenspectrum. The effectiveness of the proposed techniques is demonstrated
-          with numerical
-          simulations on real-world networks of different sizes and complexities. </div>
+        <p>
+          <span;>&#10033</span> Hamiltonian System Approach to Eigenvalue-Eigenvector Problem in
+            Networks <br>
+            (<span;>alphabetical order</span>) Konstantin Avrachenkov, Philippe Jacquet and Jithin
+              K. Sreedharan* <br>
+              <i>IEEE International Workshop on Multidimensional (nD) Systems (nDS) 2017 </i> <br>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#nds2017">[abstract]</button>
+              <!-- <a data-toggle="collapse" data-target="#nds2017">[abstract]</a> -->
+              <a href="./files/publications/nDS_2017.pdf ">[paper]</a>
+              <div class="collapse" id="nds2017">
+                Because of the significant increase in size and complexity of the networks, the distributed computation
+                of
+                eigenvalues and eigenvectors of graph matrices has become very challenging and yet it remains as
+                important as
+                before. In this paper we develop efficient
+                distributed algorithms to detect, with higher resolution, closely situated eigenvalues and corresponding
+                eigenvectors of symmetric graph matrices. We model the system of graph spectral computation as physical
+                systems with Lagrangian
+                and Hamiltonian dynamics. The spectrum of Laplacian matrix, in particular, is framed as a classical
+                spring-mass system with Lagrangian dynamics. The spectrum of any general symmetric graph matrix turns
+                out to
+                have a simple connection
+                with quantum systems and it can be thus formulated as a solution to a Schr\"odinger-type differential
+                equation. Taking into account the higher resolution requirement in the spectrum computation and the
+                related
+                stability issues
+                in the numerical solution of the underlying differential equation, we propose the application of
+                symplectic
+                integrators to the calculation of eigenspectrum. The effectiveness of the proposed techniques is
+                demonstrated
+                with numerical
+                simulations on real-world networks of different sizes and complexities. </div>
         </p>
       </li>
 
       <li>
-        <p><span;>&#10033</span> Inference in OSNs via Lightweight Partial Crawls<br>
-          (<span;>alphabetical order</span>) Konstantin Avrachenkov, Bruno Ribeiro and Jithin K.
-          Sreedharan* <br>
-          <i>ACM SIGMETRICS / PERFORMANCE 2016, (acceptance rate: 13.5%) </i><br>
-          <button class="btn btn-link" data-toggle="collapse" data-target="#sigmetrics2016">[abstract]</button>
-          <!-- <a data-toggle="collapse" data-target="#sigmetrics2016">[abstract]</a> -->
-          <a href="./files/publications/Jithin_Sigmetrics_2016.pdf">[paper]</a>
-          <a href="./files/slides/JKSreedharan_Sigmetrics_v2_pptsplit.pdf">[slides]</a>
-          <a href="https://github.com/jithin-k-sreedharan/HypRW"> [code] </a>
-        <div class="collapse" id="sigmetrics2016">
-          Are Online Social Network (OSN) A users more likely to form friendships with those with similar attributes? Do
-          users at an OSN B score content more favorably than OSN C users? Such questions frequently arise in the
-          context of Social Network Analysis (SNA)
-          but often crawling an OSN network via its Application Programming Interface (API) is the only way to gather
-          data from a third party. To date, these partial API crawls are the majority of public datasets and the synonym
-          of lack
-          of statistical guarantees in incomplete-data comparisons, severely limiting SNA research progress. Using
-          regenerative properties of the random walks, we propose estimation techniques based on short crawls that have
-          proven statistical
-          guarantees. Moreover, our short crawls can be implemented in massively distributed algorithms. We also provide
-          an adaptive crawler that makes our method parameter-free, significantly improving our statistical guarantees.
-          We then
-          derive the Bayesian approximation of the posterior of the estimates, and in addition, obtain an estimator for
-          the expected value of node and edge statistics in an equivalent configuration model or Chung-Lu random graph
-          model of
-          the given network (where nodes are connected randomly) and use it as a basis for testing null hypotheses. The
-          theoretical results are supported with simulations on a variety of real-world networks.
-        </div>
+        <p>
+          <span;>&#10033</span> Inference in OSNs via Lightweight Partial Crawls<br>
+            (<span;>alphabetical order</span>) Konstantin Avrachenkov, Bruno Ribeiro and Jithin K.
+              Sreedharan* <br>
+              <i>ACM SIGMETRICS / PERFORMANCE 2016, (acceptance rate: 13.5%) </i><br>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#sigmetrics2016">[abstract]</button>
+              <!-- <a data-toggle="collapse" data-target="#sigmetrics2016">[abstract]</a> -->
+              <a href="./files/publications/Jithin_Sigmetrics_2016.pdf">[paper]</a>
+              <a href="./files/slides/JKSreedharan_Sigmetrics_v2_pptsplit.pdf">[slides]</a>
+              <a href="https://github.com/jithin-k-sreedharan/HypRW"> [code] </a>
+              <div class="collapse" id="sigmetrics2016">
+                Are Online Social Network (OSN) A users more likely to form friendships with those with similar
+                attributes? Do
+                users at an OSN B score content more favorably than OSN C users? Such questions frequently arise in the
+                context of Social Network Analysis (SNA)
+                but often crawling an OSN network via its Application Programming Interface (API) is the only way to
+                gather
+                data from a third party. To date, these partial API crawls are the majority of public datasets and the
+                synonym
+                of lack
+                of statistical guarantees in incomplete-data comparisons, severely limiting SNA research progress. Using
+                regenerative properties of the random walks, we propose estimation techniques based on short crawls that
+                have
+                proven statistical
+                guarantees. Moreover, our short crawls can be implemented in massively distributed algorithms. We also
+                provide
+                an adaptive crawler that makes our method parameter-free, significantly improving our statistical
+                guarantees.
+                We then
+                derive the Bayesian approximation of the posterior of the estimates, and in addition, obtain an
+                estimator for
+                the expected value of node and edge statistics in an equivalent configuration model or Chung-Lu random
+                graph
+                model of
+                the given network (where nodes are connected randomly) and use it as a basis for testing null
+                hypotheses. The
+                theoretical results are supported with simulations on a variety of real-world networks.
+              </div>
         </p>
       </li>
 
       <li>
-        <p><span;>&#10033</span> Distributed Spectral Decomposition in Networks by Complex
-          Diffusion and Quantum Random Walk<br>
-          (<span;>alphabetical order</span>) Konstantin Avrachenkov, Philippe Jacquet and Jithin
-          K. Sreedharan* <br>
-          <i>IEEE International Conference on Computer Communication (INFOCOM) 2016, (acceptance rate: 18.25%) </i><br>
-          <button class="btn btn-link" data-toggle="collapse" data-target="#infocom2016">[abstract]</button>
-          <!-- <a data-toggle="collapse" data-target="#infocom2016">[abstract]</a> -->
-          <a href="./files/publications/Jithin_Infocom2016.pdf">[paper]</a>
-          <a href="./files/slides/Jithin_Infocom_with-pause.pdf">[slides]</a>
-          <a href="./files/publications/poster_Jithin_INRIA.pdf">[poster (Bell Labs Future days, Paris)]</a>
-        <div class="collapse" id="infocom2016">
-          In this paper we address the problem of finding top $k$ eigenvalues and corresponding eigenvectors of
-          symmetric graph matrices in networks in a distributed way. We propose a novel idea called complex power
-          iterations in order to decompose the eigenvalues
-          and eigenvectors at node level, analogous to time-frequency analysis in signal processing. At each node,
-          eigenvalues correspond to the frequencies of spectral peaks and respective eigenvector components are the
-          amplitudes at those
-          points. Based on complex power iterations and motivated from fluid diffusion processes in networks, we devise
-          distributed algorithms with different orders of approximation. We also introduce a Monte Carlo technique with
-          gossiping
-          which substantially reduces the computational overhead. An equivalent parallel random walk algorithm is also
-          presented. We validate the algorithms with simulations on real-world networks. Our formulation of the spectral
-          decomposition
-          can be easily adapted to a simple algorithm based on quantum random walks. With the advent of quantum
-          computing, the proposed quantum algorithm will be extremely useful.
-        </div>
-        </p>
-      </li>
-
-
-      <li>
-        <p><span;>&#10033</span> Comparison of random walk based techniques for estimating
-          network averages<br>
-          (<span;>alphabetical order</span>) Konstantin Avrachenkov, Vivek S. Borkar, Arun
-          Kadavankandy and and Jithin K. Sreedharan* <br>
-          <i>5th International Conference on Computational Social Networks (CSoNet) 2016 </i> <br>
-          <button class="btn btn-link" data-toggle="collapse" data-target="#csonet2016">[abstract]</button>
-          <!-- <a data-toggle="collapse" data-target="#csonet2016">[abstract]</a> -->
-          <a href="./files/publications/Jithin_Csonet_2016.pdf">[paper]</a>
-          <a href="./files/slides/JKSreedharan_CSoNet16_pptsplit.pdf">[slides]</a>
-          <a href="https://github.com/jithin-k-sreedharan/RL_based_RW_graph">[code]</a>
-        <div class="collapse" id="csonet2016">
-          Function estimation on Online Social Networks (OSN) is an important field of study in complex network
-          analysis. An efficient way to do function estimation on large networks is to use random walks. We can then
-          defer to the extensive theory of Markov chains
-          to do error analysis of these estimators. In this work we compare two existing techniques, Metropolis-Hastings
-          MCMC and Respondent-Driven Sampling, that use random walks to do function estimation and compare them with a
-          new reinforcement
-          learning based technique. We provide both theoretical and empirical analyses for the estimators we consider.
-        </div>
+        <p>
+          <span;>&#10033</span> Distributed Spectral Decomposition in Networks by Complex
+            Diffusion and Quantum Random Walk<br>
+            (<span;>alphabetical order</span>) Konstantin Avrachenkov, Philippe Jacquet and Jithin
+              K. Sreedharan* <br>
+              <i>IEEE International Conference on Computer Communication (INFOCOM) 2016, (acceptance rate: 18.25%)
+              </i><br>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#infocom2016">[abstract]</button>
+              <!-- <a data-toggle="collapse" data-target="#infocom2016">[abstract]</a> -->
+              <a href="./files/publications/Jithin_Infocom2016.pdf">[paper]</a>
+              <a href="./files/slides/Jithin_Infocom_with-pause.pdf">[slides]</a>
+              <a href="./files/publications/poster_Jithin_INRIA.pdf">[poster (Bell Labs Future days, Paris)]</a>
+              <div class="collapse" id="infocom2016">
+                In this paper we address the problem of finding top $k$ eigenvalues and corresponding eigenvectors of
+                symmetric graph matrices in networks in a distributed way. We propose a novel idea called complex power
+                iterations in order to decompose the eigenvalues
+                and eigenvectors at node level, analogous to time-frequency analysis in signal processing. At each node,
+                eigenvalues correspond to the frequencies of spectral peaks and respective eigenvector components are
+                the
+                amplitudes at those
+                points. Based on complex power iterations and motivated from fluid diffusion processes in networks, we
+                devise
+                distributed algorithms with different orders of approximation. We also introduce a Monte Carlo technique
+                with
+                gossiping
+                which substantially reduces the computational overhead. An equivalent parallel random walk algorithm is
+                also
+                presented. We validate the algorithms with simulations on real-world networks. Our formulation of the
+                spectral
+                decomposition
+                can be easily adapted to a simple algorithm based on quantum random walks. With the advent of quantum
+                computing, the proposed quantum algorithm will be extremely useful.
+              </div>
         </p>
       </li>
 
 
       <li>
-        <p><span;>&#10033</span> Distribution and Dependence of Extremes in Network Sampling
-          Processes<br>
-          (<span;>alphabetical order</span>) Konstantin Avrachenkov, Natalia M. Markovich and
-          Jithin K. Sreedharan* <br>
-          <button class="btn btn-link" data-toggle="collapse" data-target="#csn2015">[abstract]</button>
-          <!-- <a data-toggle="collapse" data-target="#csn2015">[abstract]</a> -->
-          <a href="http://www.computationalsocialnetworks.com/content/pdf/s40649-015-0018-3.pdf">[paper]</a>
-          <a href="./files/slides/Jithin_Maestro-retreat_Mar-15.pdf">[slides]</a>
-        <ul>
-          <li><i>Computational Social Networks, Springer, 2015</i></li>
-          <li><i>Third International IEEE Workshop on Complex Networks and their Applications, Nov 2014</i></li>
-        </ul>
-        <div class="collapse" id="csn2015">
-          We explore the dependence structure in the sampled sequence of complex networks. We consider randomized
-          algorithms to sample the nodes and study extremal properties in any associated stationary sequence of
-          characteristics of interest like node degrees,
-          number of followers or income of the nodes in Online Social Networks etc, which satisfy two mixing conditions.
-          Several useful extremes of the sampled sequence like $k$th largest value, clusters of exceedances over a
-          threshold,
-          first hitting time of a large value etc are investigated. We abstract the dependence and the statistics of
-          extremes into a single parameter that appears in Extreme Value Theory, called Extremal Index (EI). In this
-          work, we derive
-          this parameter analytically and also estimate it empirically. We propose the use of EI as a parameter to
-          compare different sampling procedures. As a specific example, degree correlations between neighboring nodes
-          are studied in
-          detail with three prominent random walks as sampling techniques.
-        </div>
+        <p>
+          <span;>&#10033</span> Comparison of random walk based techniques for estimating
+            network averages<br>
+            (<span;>alphabetical order</span>) Konstantin Avrachenkov, Vivek S. Borkar, Arun
+              Kadavankandy and and Jithin K. Sreedharan* <br>
+              <i>5th International Conference on Computational Social Networks (CSoNet) 2016 </i> <br>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#csonet2016">[abstract]</button>
+              <!-- <a data-toggle="collapse" data-target="#csonet2016">[abstract]</a> -->
+              <a href="./files/publications/Jithin_Csonet_2016.pdf">[paper]</a>
+              <a href="./files/slides/JKSreedharan_CSoNet16_pptsplit.pdf">[slides]</a>
+              <a href="https://github.com/jithin-k-sreedharan/RL_based_RW_graph">[code]</a>
+              <div class="collapse" id="csonet2016">
+                Function estimation on Online Social Networks (OSN) is an important field of study in complex network
+                analysis. An efficient way to do function estimation on large networks is to use random walks. We can
+                then
+                defer to the extensive theory of Markov chains
+                to do error analysis of these estimators. In this work we compare two existing techniques,
+                Metropolis-Hastings
+                MCMC and Respondent-Driven Sampling, that use random walks to do function estimation and compare them
+                with a
+                new reinforcement
+                learning based technique. We provide both theoretical and empirical analyses for the estimators we
+                consider.
+              </div>
+        </p>
+      </li>
+
+
+      <li>
+        <p>
+          <span;>&#10033</span> Distribution and Dependence of Extremes in Network Sampling
+            Processes<br>
+            (<span;>alphabetical order</span>) Konstantin Avrachenkov, Natalia M. Markovich and
+              Jithin K. Sreedharan* <br>
+              <button class="btn btn-link" data-toggle="collapse" data-target="#csn2015">[abstract]</button>
+              <!-- <a data-toggle="collapse" data-target="#csn2015">[abstract]</a> -->
+              <a href="http://www.computationalsocialnetworks.com/content/pdf/s40649-015-0018-3.pdf">[paper]</a>
+              <a href="./files/slides/Jithin_Maestro-retreat_Mar-15.pdf">[slides]</a>
+              <ul>
+                <li><i>Computational Social Networks, Springer, 2015</i></li>
+                <li><i>Third International IEEE Workshop on Complex Networks and their Applications, Nov 2014</i></li>
+              </ul>
+              <div class="collapse" id="csn2015">
+                We explore the dependence structure in the sampled sequence of complex networks. We consider randomized
+                algorithms to sample the nodes and study extremal properties in any associated stationary sequence of
+                characteristics of interest like node degrees,
+                number of followers or income of the nodes in Online Social Networks etc, which satisfy two mixing
+                conditions.
+                Several useful extremes of the sampled sequence like $k$th largest value, clusters of exceedances over a
+                threshold,
+                first hitting time of a large value etc are investigated. We abstract the dependence and the statistics
+                of
+                extremes into a single parameter that appears in Extreme Value Theory, called Extremal Index (EI). In
+                this
+                work, we derive
+                this parameter analytically and also estimate it empirically. We propose the use of EI as a parameter to
+                compare different sampling procedures. As a specific example, degree correlations between neighboring
+                nodes
+                are studied in
+                detail with three prominent random walks as sampling techniques.
+              </div>
         </p>
       </li>
 
